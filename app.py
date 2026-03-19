@@ -7,8 +7,10 @@ import logging
 
 TARGET_ID = 1473153899723751486
 TOKEN = "MTQ4MjY5MzIxMzIxODQxMDU4OA.GWnL1b.ps9UWZyffs0A_rMbQKuW8u8PgA0R6VBhzVQ07Q"
-WEB_SERVER_HOST = "localhost"
-WEB_SERVER_PORT = 5050
+import os
+
+WEB_SERVER_HOST = "0.0.0.0"
+WEB_SERVER_PORT = int(os.environ.get("PORT", 5050))
 TIMEOUT = 1200
 
 client = discord.Client()
