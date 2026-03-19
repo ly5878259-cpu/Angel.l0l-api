@@ -1,3 +1,4 @@
+import os
 import discord
 from aiohttp import web
 import asyncio
@@ -6,7 +7,7 @@ import logging
 
 
 TARGET_ID = 1473153899723751486
-TOKEN = "MTQ4MjY5MzIxMzIxODQxMDU4OA.GWnL1b.ps9UWZyffs0A_rMbQKuW8u8PgA0R6VBhzVQ07Q"
+TOKEN = os.environ.get("TOKEN")
 import os
 
 WEB_SERVER_HOST = "0.0.0.0"
